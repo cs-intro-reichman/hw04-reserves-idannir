@@ -40,7 +40,7 @@ public class StringOps {
             }
             else  str1 += (char)(string.charAt(i));
         }
-        String str2 = "" + (char)(string.charAt(n));
+        String str2 = "" + (char)(str1.charAt(n));
         for (int i = 1; i<string.length();i++)
         {
             if (str1.charAt(i) == 32)
