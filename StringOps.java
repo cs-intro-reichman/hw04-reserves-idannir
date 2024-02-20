@@ -26,8 +26,7 @@ public class StringOps {
             }
             else str2 += str1.charAt(i);
         }
-        string = str2;
-        return string;
+        return str2;
     }
 
     public static String camelCase (String string) {
@@ -50,8 +49,7 @@ public class StringOps {
             }
             else str1 += str1.charAt(i);
         }
-        string = str2;
-        return string;
+        return str2;
     }
 
     /**
@@ -69,12 +67,14 @@ public class StringOps {
             }
         }
         int [] array = new int[cnt];
+        int j =0;
         
         for (int i=0; i<string.length();i++)
         {
             if (string.charAt(i) == chr)
             {
-                array [i] = string.indexOf(i);
+                array [j] = string.indexOf(i);
+                j++;
             }
 
         }
