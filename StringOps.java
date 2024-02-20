@@ -42,6 +42,11 @@ public class StringOps {
         String str2 = "";
         for (int i=0; i<string.length();i++)
         {
+            if (str1.charAt(0i) == 32)
+            {
+                str2 += (char)(str1.charAt(i+1));
+                i++;
+            }
             if (str1.charAt(i) == 32)
             {
                 str2 += (char)(str1.charAt(i+1) -32);
@@ -73,7 +78,7 @@ public class StringOps {
         {
             if (string.charAt(i) == chr)
             {
-                array [j] = string.indexOf(i);
+                array [j] = i;
             }
 
         }

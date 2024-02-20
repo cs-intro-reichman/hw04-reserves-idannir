@@ -18,7 +18,7 @@ public class ArrayOps
                 }
             if (isthere = false)
             {
-                missing = i;
+                return = i;
             }
             isthere = false;
         }
