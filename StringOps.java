@@ -26,7 +26,21 @@ public class StringOps {
     }
 
     public static String capVowelsLowRest (String string) {
-        // Write your code here:
+        String str1 = "";
+        for (int i=0; i<string.length();i++)
+        {
+            if (charAt(i) == 32)
+            {str1 += charAt(i)};
+            else if (charAt(i) > 64 && charAt(i) < 91)
+            {str1 += charAt(i) + 32};
+        }
+        String str2 = "";
+        for (int i=0; i<string.length();i++)
+        {
+            if (charAt(i) == 97 || charAt(i) == 101 || charAt(i) == 105|| charAt(i) == 111 || charAt(i) == 117)
+            {str1 += charAt(i) -32 };
+            else str1 += charAt(i);
+        }
         return "";
     }
 
