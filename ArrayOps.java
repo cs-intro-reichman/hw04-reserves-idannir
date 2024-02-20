@@ -5,7 +5,7 @@ public class ArrayOps
     }
     
     public static int findMissingInt (int [] array) {
-        int isthere = 0;
+        int isthere = -1;
         int missing = -1;
         for (int i =0; i<array.length; i++)
         {
@@ -16,7 +16,7 @@ public class ArrayOps
                       isthere++;
                     }
                 }
-            if (isthere!= (i+1))
+            if (isthere!= (i))
             {
                 missing = i;
             }
@@ -28,12 +28,24 @@ public class ArrayOps
     public static int secondMaxValue(int [] array) {
         int max = 0;
         int smax = 0;
+        int cnt = 0;
         for (int i =0; i<array.length; i++)
         {
             if (array [i] > max )
             {
                 max = array [i];
             }           
+        }
+        for (int i =0; i<array.length; i++)
+        {
+            if (array [i] == max )
+            {
+                cnt++;
+            }           
+        }
+        if (cnt > 1)
+        {
+            return max;
         }
         for (int j = 0; j<array.length; j++)
             {
@@ -66,7 +78,7 @@ public class ArrayOps
             }
             is1 = false;
         }
-        for (int i =0; i<array2.length; i++)
+      /*/  for (int i =0; i<array2.length; i++)
         {
             for (int j = 0; j<array1.length; j++)
             {
@@ -80,7 +92,7 @@ public class ArrayOps
                 isSameElements = false;
             }
             is1 = false;
-        }
+        }*/
         return isSameElements;
     }
 
