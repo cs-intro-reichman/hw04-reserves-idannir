@@ -74,6 +74,11 @@ public class StringOps {
         return "";
     }
 
+    /**
+     * @param string
+     * @param chr
+     * @return
+     */
     public static int[] allIndexOf (String string, char chr) {
        int cnt =0;
         for (int i=0; i<string.length();i++)
@@ -84,14 +89,15 @@ public class StringOps {
             }
         }
         int [] array = new int[cnt];
+        
         for (int i=0; i<string.length();i++)
         {
             if (string.charAt(i) == chr)
             {
-                new [i] = string.indexOf(i);
+                array [i] = string.indexOf(i);
             }
 
         }
-        return new int[1];
+        return array;
     }
 }
