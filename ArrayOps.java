@@ -110,5 +110,5 @@ public class ArrayOps
 
         boolean sorted = (checkAccend || checkDeccend);
         return sorted;
-
+    }
 }
