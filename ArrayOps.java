@@ -24,7 +24,7 @@ public class ArrayOps
         }
         if (array.length == 1 && missing == -1)
         {
-            missing = 0; 
+            missing = 1; 
         }
         return missing;
     }
