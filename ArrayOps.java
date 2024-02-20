@@ -22,7 +22,7 @@ public class ArrayOps
             }
             isthere = -1;
         }
-        if (array.length == 1 && missing == -1)
+        if (array.length == 1 && array[0] == 0)
         {
             missing = 1; 
         }

@@ -45,7 +45,6 @@ public class StringOps {
         {
             if (str1.charAt(n) == 32)
             {
-                str2 += (char)(str1.charAt(i+1));
                 i++;
             }
             if (str1.charAt(i) == 32)
@@ -80,7 +79,7 @@ public class StringOps {
             if (string.charAt(i) == chr)
             {
                 array [j] = i;
-                j = string.length();
+                j++;
             }
 
         }
