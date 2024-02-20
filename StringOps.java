@@ -31,6 +31,7 @@ public class StringOps {
 
     public static String camelCase (String string) {
         String str1 = "";
+        int n =0;
         for (int i=0; i<string.length();i++)
         {
             if (string.charAt(i) > 64 && string.charAt(i) < 91)
@@ -42,7 +43,7 @@ public class StringOps {
         String str2 = "";
         for (int i=0; i<string.length();i++)
         {
-            if (str1.charAt(i) == 32)
+            if (str1.charAt(n) == 32)
             {
                 str2 += (char)(str1.charAt(i+1));
                 i++;
@@ -79,6 +80,7 @@ public class StringOps {
             if (string.charAt(i) == chr)
             {
                 array [j] = i;
+                j = string.length;
             }
 
         }
