@@ -1,26 +1,4 @@
 public class StringOps {
-    ////////////////////////////////////////////////////////////
-    //////                                               ///////
-    //////              Reminder:                        ///////
-    //////        allowed methods                        ///////
-    //////                                               ///////
-    //////        1.charAt(int index)                    ///////
-    //////        2.length()                             ///////
-    //////        3.substring(int start)                 ///////
-    //////        4.substring(int start,int ends)        ///////
-    //////        5.indexOf(String str)                  ///////
-    //////                                               ///////
-    //////        The rest are not allowed !             ///////
-    //////        if you want to use a different         ///////
-    //////        method, and you can implement          ///////
-    //////        it using material from the course      ///////
-    //////        you need to implement a version of     ///////
-    //////        the function by yourself.              ///////
-    //////                                               ///////
-    //////        see example for substring              ///////
-    //////        in Recitation 3 question 5             ///////
-    //////                                               ///////
-    ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
         
     }
@@ -37,6 +15,7 @@ public class StringOps {
             {
                 str1 += string.charAt(i) + 32;
             }
+            else  str1 += string.charAt(i);
         }
         String str2 = "";
         for (int i=0; i<string.length();i++)
@@ -48,7 +27,7 @@ public class StringOps {
             else str2 += str1.charAt(i);
         }
         string = str2;
-        return "";
+        return string;
     }
 
     public static String camelCase (String string) {
@@ -59,6 +38,7 @@ public class StringOps {
             {
                 str1 += string.charAt(i) + 32 ;
             }
+            else  str1 += string.charAt(i);
         }
         String str2 = "";
         for (int i=0; i<string.length();i++)
@@ -71,7 +51,7 @@ public class StringOps {
             else str1 += str1.charAt(i);
         }
         string = str2;
-        return "";
+        return string;
     }
 
     /**

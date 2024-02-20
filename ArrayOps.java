@@ -20,7 +20,7 @@ public class ArrayOps
             {
                 missing = i;
             }
-            
+            isthere = -1;
         }
         return missing;
     }
@@ -78,21 +78,6 @@ public class ArrayOps
             }
             is1 = false;
         }
-      /*/  for (int i =0; i<array2.length; i++)
-        {
-            for (int j = 0; j<array1.length; j++)
-            {
-                if (array1 [i] == array2 [j] )
-                {
-                    is1 = true;
-                }
-            }
-            if (is1 != true)
-            {
-                isSameElements = false;
-            }
-            is1 = false;
-        }*/
         return isSameElements;
     }
 
