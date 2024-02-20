@@ -40,13 +40,9 @@ public class StringOps {
             }
             else  str1 += (char)(string.charAt(i));
         }
-        String str2 = "";
-        for (int i=0; i<string.length();i++)
+        String str2 = "" + (char)(string.charAt(n));
+        for (int i = 1; i<string.length();i++)
         {
-            if (str1.charAt(n) == 32)
-            {
-                i++;
-            }
             if (str1.charAt(i) == 32)
             {
                 str2 += (char)(str1.charAt(i+1) -32);

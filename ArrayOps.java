@@ -5,7 +5,7 @@ public class ArrayOps
     }
     
     public static int findMissingInt (int [] array) {
-        int isthere = -1;
+        int isthere = 0;
         int missing = -1;
         for (int i =0; i<array.length; i++)
         {
@@ -16,11 +16,11 @@ public class ArrayOps
                       isthere ++;
                     }
                 }
-            if (isthere == (i-1))
+            if (isthere == (i))
             {
                 return i;
             }
-            isthere = -1;
+            isthere = 0;
         }
         if (array.length == 1 && array[0] == 0)
         {
