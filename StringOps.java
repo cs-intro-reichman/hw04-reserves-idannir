@@ -80,7 +80,7 @@ public class StringOps {
             if (string.charAt(i) == chr)
             {
                 array [j] = i;
-                j = string.length;
+                j = string.length();
             }
 
         }

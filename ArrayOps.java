@@ -16,7 +16,7 @@ public class ArrayOps
                       isthere ++;
                     }
                 }
-            if (isthere = (i-1))
+            if (isthere == (i-1))
             {
                 return i;
             }
