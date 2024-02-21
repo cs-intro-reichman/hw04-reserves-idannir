@@ -5,28 +5,24 @@ public class ArrayOps
     }
     
     public static int findMissingInt (int [] array) {
-        int isthere = 0;
-        int missing = -1;
+        boolean isthere = false;
+        int n = array.length;
         for (int i =0; i<array.length; i++)
         {
             for (int j=0; j<array.length; j++)
                 {
                     if (array [j] == i )
                     {
-                      isthere ++;
+                      isthere =true;
                     }
                 }
-            if (isthere == (i))
+            if (isthere == false)
             {
                 return i;
             }
-            isthere = 0;
+            isthere = false;
         }
-        if (array.length == 1 && array[0] == 0)
-        {
-            missing = 1; 
-        }
-        return missing;
+        return  n ;
     }
 
     public static int secondMaxValue(int [] array) {

@@ -31,6 +31,7 @@ public class StringOps {
 
     public static String camelCase (String string) {
         String str1 = "";
+        int space = -2;
         int n =0;
         for (int i=0; i<string.length();i++)
         {
@@ -45,10 +46,14 @@ public class StringOps {
         {
             if (str1.charAt(i) == 32)
             {
-                str2 += (char)(str1.charAt(i+1) -32);
+                space = i;
                 i++;
             }
             else str2 += (char)(str1.charAt(i));
+            if (space== (i-1))
+            {
+                str2 += (char)(str1.charAt(i+1) -32);
+            }
         }
         return str2;
     }
