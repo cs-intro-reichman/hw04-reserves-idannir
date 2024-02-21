@@ -50,7 +50,7 @@ public class StringOps {
                 i++;
             }
             else str2 += (char)(str1.charAt(i));
-            if (space== (i-1))
+            if (space == (i-1) && str1.charAt(i) != 32)
             {
                 str2 += (char)(str1.charAt(i) -32);
             }
