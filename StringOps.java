@@ -52,7 +52,7 @@ public class StringOps {
             else str2 += (char)(str1.charAt(i));
             if (space== (i-1))
             {
-                str2 += (char)(str1.charAt(i+1) -32);
+                str2 += (char)(str1.charAt(i) -32);
             }
         }
         return str2;
